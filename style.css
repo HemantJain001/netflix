@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("./assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    height: 90vh;
+    position: relative;
+}
+
+.main .box{
+    background-color: black;
+    height: 90vh;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.main .hero{
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 1.5em;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;   
+    text-align: center;
+    height: calc(100% - 62px);
+}
+
+.main .hero > :first-child{
+    font-weight: bold;
+}
+.main .hero > :nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+nav{
+    align-items: center;
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 80vw;
+    padding: 16px 0;
+}
+
+nav img{
+    color: rgb(229 9 20);
+    position: relative;
+    width: 114px;
+    z-index: 10;
+}
+nav button, nav select{
+    position: relative;
+    z-index: 10;
+}
+.seperation{
+    height: 8px;
+    background-color: #494949;
+}
+.btn{
+    padding: 6px 14px;
+    background-color: rgba(203, 198, 198, 0.345);
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: rgb(229 9 20);
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius:4px;
+    border:none;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+.main input{
+    background-color: rgba(23,23,23,0.3);
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 7px 15px 8px 14px;
+}
+.heroButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 20px 40px;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    gap: 40px;
+}
+.first h1{
+    font-weight: 900;
+}
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video{
+    position: absolute;
+    top: 8vh;
+    left: 4vw;
+    width: 22vw;   
+}
+
+.secImg3{
+    position: relative;
+}
+
+.secImg3 img{
+    width: 33vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg3 video{
+    position: absolute;
+    top: 5vh;
+    left: 6vw;
+    width: 21vw;   
+}
+.faq{
+    color: white;
+    padding: 20px;
+}
+
+
+.faq h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.faqbox{
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    margin: auto;
+    margin-bottom: 10px;
+    transition: max-height 1s;
+}
+
+.faqhead{
+    display: flex;
+    transition: all 150ms ease-out;
+    background-color: rgb(47, 45, 45);
+    font-size: 24px;
+    padding: 24px;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.faq .dropdown{
+    background-color: rgb(45 45 45);
+    font-size: 18px;
+    padding: 24px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.display-none{
+    display: none;
+}
+
+.faqhead:hover{
+    background-color: rgb(71, 70, 70);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 70vw;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.footer-item{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+footer, .footer a{
+    color: white;
+}
+footer .contact{
+    margin: 2px calc(15vw - 10px);
+    max-width: 70vw;
+    padding: 30px 0 10px 0;
+}
+
+@media screen and (max-width:1115px){
+    .first{
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .footer-item{
+        margin-top: 20px;
+    }
+}
