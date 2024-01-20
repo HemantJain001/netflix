@@ -1,5 +1,8 @@
-
-document.querySelectorAll(".faqhead")[1].addEventListener("click", change);
-function toggle(){
-document.querySelectorAll(".dropdown")[1].classList.toggle("display-none");
+for(var i=0;i<6;i++){
+    dropdown(i);
+}
+function dropdown(num){
+    document.querySelectorAll(".faqhead")[num].addEventListener("click",function (){
+        document.querySelectorAll(".dropdown")[num].classList.toggle("display-none");
+    });
 }
